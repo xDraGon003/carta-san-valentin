@@ -55,7 +55,7 @@
 }
 
 .side {
-  background: #eee;
+  background: #ac9cff;
   height: 550px;
   width: 400px;
   padding: 10px;
@@ -84,7 +84,9 @@ body {
   justify-content: center;
   height: 100vh;
   font-family: "Sacramento", cursive;
-  background-color: #f1e3d3;
+  background: linear-gradient(-45deg, #1a0a2e, #4b0082, #8a2be2, #311b92);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
   overflow: hidden;
 }
 
@@ -260,4 +262,10 @@ body {
         transform: translateY(-100px) scale(1.5);
         opacity: 0;
     }
+  /* Animación para que el fondo se mueva */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
+
