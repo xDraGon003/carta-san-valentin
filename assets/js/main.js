@@ -1,3 +1,22 @@
+document.addEventListener("click", (e) => {
+    // Crear el elemento del corazón
+    const corazon = document.createElement("span");
+    corazon.classList.add("corazon");
+    corazon.innerHTML = "💜";
+
+    // Posicionarlo donde se hizo clic
+    corazon.style.left = `${e.clientX}px`;
+    corazon.style.top = `${e.clientY}px`;
+
+    // Añadirlo al body
+    document.body.appendChild(corazon);
+
+    // Eliminarlo después de que termine la animación (1 segundo)
+    setTimeout(() => {
+        corazon.remove();
+    }, 1000);
+});
+
 $(document).ready(function () {
     // Al cargar la página, ocultamos las cortinas
     $('.left-curtain').css('width', '0%');
