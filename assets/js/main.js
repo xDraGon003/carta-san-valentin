@@ -38,5 +38,5 @@ document.addEventListener("click", (e) => {
     // Eliminarlo después de que termine la animación (1 segundo)
     setTimeout(() => {
         corazon.remove();
-    }, 1000);
+    }, 3000);
 });
