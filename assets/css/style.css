@@ -243,3 +243,21 @@ body {
     font-size: 1em; /* Ajuste del tamaño de fuente */
   }
 }
+.corazon {
+    position: absolute;
+    color: #8442f5;
+    font-size: 20px;
+    pointer-events: none; /* Para que el corazón no bloquee otros clicks */
+    animation: flotarYDesvanecer 1s ease-out forwards;
+}
+
+@keyframes flotarYDesvanecer {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px) scale(1.5);
+        opacity: 0;
+    }
+}
