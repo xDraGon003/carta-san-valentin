@@ -64,7 +64,7 @@
 .side.one {
   width: 320px;
   transform: skew(10deg, 20deg);
-  linear-gradient(90deg, #fff, #fff 40%, #ddd);
+  background: linear-gradient(90deg, #fff, #fff 40%, #ddd);
   display: flex; /* Utiliza flexbox para centrar el corazón verticalmente */
   justify-content: center; /* Centra horizontalmente el contenido */
   align-items: center; /* Centra verticalmente el contenido */
@@ -75,8 +75,7 @@
 
 .side.two {
   transform: skew(10deg, -15deg);
-  linear-gradient(90deg, #fff, #fff 40%, #ddd);
-}
+  background: linear-gradient(-90deg, #fff, #fff 40%, #f0f0f0);
 }
 
 body {
@@ -261,3 +260,4 @@ body {
         transform: translateY(-100px) scale(1.5);
         opacity: 0;
     }
+}
