@@ -75,9 +75,7 @@
 
 .side.two {
   transform: skew(10deg, -15deg);
-  background: linear-gradient(-45deg, #1a0a2e, #4b0082, #8a2be2, #311b92);
-  background-size: 100% 100%;
-  animation: gradientBG 15s ease infinite;
+  linear-gradient(90deg, #fff, #fff 40%, #ddd);
 }
 }
 
