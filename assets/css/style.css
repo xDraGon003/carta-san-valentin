@@ -248,7 +248,7 @@ body {
     color: #8442f5;
     font-size: 20px;
     pointer-events: none; /* Para que el corazón no bloquee otros clicks */
-    animation: flotarYDesvanecer 2.5s ease-out forwards;
+    animation: flotarYDesvanecer 3s ease-out forwards;
 }
 
 @keyframes flotarYDesvanecer {
